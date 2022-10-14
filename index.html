@@ -176,13 +176,13 @@
                 <img src="https://canary.contestimg.wish.com/api/webimage/5e791e3bc719723c8ca11c71-large.jpg?cache_buster=0c81513840f2927c36627d448261bf29" alt="">
             </div>
 
-            <form action="booked.html">
+            <form action="D:\Web Development\Web Development Skill lab\Sigma Nation Project\booked.html">
                 <h3>book slot</h3>
-                <input type="text" id="name" placeholder="Your name" class="box" required>
+                <input  id="fname" type="text" placeholder="Your name" class="box" required>
                 <input type="tel" id="phone" name="phone" pattern="[0-9]{4}[0-9]{3}[0-9]{3}" class="box"   placeholder="Your number"  maxlength="10" required>
-                <input type="email" id="email" placeholder="Your email" class="box" required>
+                <input type="email" id="inEmail" placeholder="Your email" class="box" required>
                 <input type="datetime-local" id="date-time" class="box" required>
-                <input type="submit" id="submit" value="book now" class="btn">
+                <button type="submit" id="submit" class="btn" onclick="formValidate()">Book Now</button>
             </form>
 
         </div>
@@ -264,7 +264,7 @@
     <!-- footer section ends -->
 
     <!-- custom js file link  -->
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 
     </body>
 </html>
