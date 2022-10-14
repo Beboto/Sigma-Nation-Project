@@ -8,6 +8,9 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="icon" type="image/x-icon" href="https://cdn.pixabay.com/photo/2012/05/04/10/51/bodybuilder-47188_1280.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
     </head>
 
     <body >
@@ -16,7 +19,10 @@
 
     <header class="header">
 
-        <a href="#" class="logo"><img class="sigma-logo" src="https://cdn.pixabay.com/photo/2012/05/04/10/51/bodybuilder-47188_1280.png" alt="" width = "2.5%"> Sigma Nation </a>
+        <a href="#" class="logo">
+            <img class="sigma-logo" src="https://cdn.pixabay.com/photo/2012/05/04/10/51/bodybuilder-47188_1280.png" alt="" width = "2.25%">
+            <p class="brand">Sigma Nation</p>
+        </a>
 
         <nav class="navbar">
             <a href="#home">home</a>
@@ -31,7 +37,6 @@
     </header>
 
     <!-- header section ends -->
-
     <!-- home section starts  -->
 
     <section class="home" id="home">
@@ -56,7 +61,6 @@
     <section class="icons-container">
 
         <div class="icons">
-    
             <h3>420+</h3>
             <p>Satisfied members</p>
         </div>
@@ -67,13 +71,11 @@
         </div>
 
         <div class="icons">
-            
             <h3>25+</h3>
             <p>programs</p>
         </div>
 
         <div class="icons">
-        
             <h3>75+</h3>
             <p>awards</p>
         </div>
@@ -90,15 +92,15 @@
 
         <div class="row">
 
-            <div class="image" align="right">
-                <img src="image/gym.png" alt="">
-            </div>
-
             <div class="content">
                 <h3>we make your fitness goals a reality</h3>
                 <p>In 2020, the first Sigma Nation opened in Bengaluru in the South Of India. Over the next two years, Sigma Nation catered to over 420 members, making it a leader in the national fitness industry. We are now among the largest chain of fitness centres that offers energetic group workouts and multiple workout formats to choose from.</p>
                 <p>We are always looking for great people to join our team. We're committed to training, so you'll be encouraged to improve your existing skills while you develop new ones.</p>
                 <a href="#footer" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
+            </div>
+
+            <div class="image" align="right">
+                <img src="image/gym.png" alt="" class="gym">
             </div>
 
         </div>
@@ -118,7 +120,7 @@
             <div class="box">
                 <img src="https://i.pinimg.com/originals/e7/b3/e1/e7b3e1d57e01fa2ded9951e252a346fb.jpg" alt="" width="75%">
                 <h3>Arnold Schwarzenegger</h3>
-                <span>7 times Mr. Olympia</span>
+                <span>Mr. Olympia<br>7 times</span>
                 <div class="share">
                     <a href="https://www.facebook.com/arnold/" class="fab fa-facebook-f"></a>
                     <a href="https://twitter.com/schwarzenegger" class="fab fa-twitter"></a>
@@ -140,7 +142,7 @@
             <div class="box">
                 <img src="https://pbs.twimg.com/media/FL40zuWWQAMW4jh.jpg" alt="" width="75%">
                 <h3>Chris Bumstead</h3>
-                <span>Mr. Olympia Classic Physique winner</span>
+                <span>Mr. Olympia<br>Classic Physique winner</span>
                 <div class="share">
                     <a href="https://www.facebook.com/Bumstead1995/" class="fab fa-facebook-f"></a>
                     <a href="https://twitter.com/c_bumstead?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="fab fa-twitter"></a>
@@ -151,7 +153,7 @@
             <div class="box">
                 <img src="https://im.indiatimes.in/photogallery/2021/Mar/Dalip-Rana-great-khali-wwe6_605da899cbcf2.jpg" alt="" width="75%">
                 <h3>The Great Khali</h3>
-                <span>Indian professional <br> wrestler</span>
+                <span>Indian professional<br>wrestler</span>
                 <div class="share">
                     <a href="https://www.facebook.com/people/The-Great-Khali-Fan-Club/100065094846418/" class="fab fa-facebook-f"></a>
                     <a href="https://twitter.com/greatkhali?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="fab fa-twitter"></a>
@@ -168,19 +170,19 @@
 
         <h1 class="heading"> <span>book</span> slot </h1>    
 
-        <div class="row">
+        <div class="row" id="error">
 
             <div class="image">
                 <img src="https://canary.contestimg.wish.com/api/webimage/5e791e3bc719723c8ca11c71-large.jpg?cache_buster=0c81513840f2927c36627d448261bf29" alt="">
             </div>
 
-            <form action="file:///D:/Web%20Development/Web%20Development%20Skill%20lab/Sigma%20Nation/booked.html">
+            <form action="booked.html">
                 <h3>book slot</h3>
-                <input type="text" placeholder="Your name" class="box" required>
-                <input type="number" placeholder="Your number" class="box" required>
-                <input type="email" placeholder="Your email" class="box" required>
-                <input type="datetime-local" class="box" required>
-                <input type="submit" value="book now" class="btn">
+                <input type="text" id="name" placeholder="Your name" class="box" required>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{4}[0-9]{3}[0-9]{3}" class="box"   placeholder="Your number"  maxlength="10" required>
+                <input type="email" id="email" placeholder="Your email" class="box" required>
+                <input type="datetime-local" id="date-time" class="box" required>
+                <input type="submit" id="submit" value="book now" class="btn">
             </form>
 
         </div>
@@ -205,14 +207,14 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
+                    <i class="fas fa-star"></i>
                 </div>
-                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam sapiente nihil aperiam? Repellat sequi nisi aliquid perspiciatis libero nobis rem numquam nesciunt alias sapiente minus voluptatem, reiciendis consequuntur optio dolorem!</p>
+                <p class="text">Sigma Nation is the best gym I've ever been to. It has everything I could ask for, ranging from the best instructors to the most reliable equipment. I became a sigma male and an overnight internet sensation thanks to Sigma Nation. </p>
             </div>
 
             <div class="box">
                 <img src="https://i0.wp.com/www.mocamboo.com/wp-content/uploads/2021/05/copy-of-copy-of-copy-of-copy-of-kfffffffff-16219402864pcl8.jpg?fit=700%2C700&ssl=1" alt="">
-                <h3>Hritik Roshan</h3>
+                <h3>Hrithik Roshan</h3>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -220,7 +222,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
-                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam sapiente nihil aperiam? Repellat sequi nisi aliquid perspiciatis libero nobis rem numquam nesciunt alias sapiente minus voluptatem, reiciendis consequuntur optio dolorem!</p>
+                <p class="text">We need to do specific exercises where we target muscles. So, we first activate the muscle before actually training it. This way it's fully prepared and stabilized. Sigma Nation has provided a great platform for me to stick to this.</p>
             </div>
 
             <div class="box">
@@ -233,7 +235,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
-                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam sapiente nihil aperiam? Repellat sequi nisi aliquid perspiciatis libero nobis rem numquam nesciunt alias sapiente minus voluptatem, reiciendis consequuntur optio dolorem!</p>
+                <p class="text">I do a variety of things. I like to do martial arts, parkour, weight training and I run for 45 minutes and that just gets my blood flowing and my body warmed up for my next activity, which is probably some martial arts or gymnastics training.</p>
             </div>
 
         </div>
@@ -262,7 +264,7 @@
     <!-- footer section ends -->
 
     <!-- custom js file link  -->
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 
     </body>
 </html>
