@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
 
 :root{
-    --purple:#d07effe8;
+    --purple:#d47effe8;
     --black:#444;
     --light-color:#777;
-    --box-shadow:.5rem .5rem 0 rgba(109, 22, 160, 0.123);
-    --text-shadow:.4rem .4rem 0 rgba(109, 22, 160, 0.123);
+    --box-shadow:.5rem .5rem 0 rgba(109, 22, 160, 0.218);
+    --text-shadow:.4rem .4rem 0 rgba(120, 57, 157, 0.232);
     --border:.2rem solid var(--purple);
 }
 
@@ -31,7 +32,7 @@ section{
 }
 
 section:nth-child(even){
-    background: #f5f5f5;
+    background: #e4dde7c3;
 }
 
 .heading{
@@ -95,8 +96,14 @@ section:nth-child(even){
 }
 
 .header .logo{
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     color: var(--black);
+}
+
+.header .logo .brand{
+    display: inline-block;
+    font-family: 'Kalam', cursive;
+    font-size: 3rem;
 }
 
 .header .navbar a{
@@ -124,7 +131,7 @@ section:nth-child(even){
     align-items: center;
     flex-wrap: wrap;
     gap:1.5rem;
-    padding-top: 10rem;
+    padding-top: 12rem;
 }
 
 .goku{
@@ -173,6 +180,7 @@ section:nth-child(even){
 .icons:hover{
     background-color: rgba(217, 185, 253, 0.295)
 }
+
 
 .icons-container .icons{
     border:var(--border);
@@ -233,6 +241,14 @@ section:nth-child(even){
     line-height: 1.8;
 }
 
+.gym{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+}
+
 .instructors .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -255,7 +271,7 @@ section:nth-child(even){
 .instructors .box-container .box img{
     height: 20rem;
     border:var(--border);
-    border-radius: .5rem;
+    border-radius: 1rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
@@ -440,6 +456,12 @@ section:nth-child(even){
 
 .footer .credit span{
     color:var(--purple);
+}
+
+#home-button{
+    margin-left: 47%;
+    font-size: 1rem;
+  
 }
 
 /* media queries  */
